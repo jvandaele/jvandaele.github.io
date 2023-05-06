@@ -1,0 +1,233 @@
+body { 
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+.menuItem { color:white; }
+
+.menuItem:hover, .menu:active { color: #02cc0c; }
+
+#langageIcone {
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	border: 1px solid black;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 35px;
+	text-align: center;
+	margin: 0px 0 20px 0;
+	padding: 5px;
+}
+
+.container { padding: 50px 0 50px 0; }
+
+.section { scroll-margin-top: 5em; }
+
+.sectionOver {
+	position: relative;
+	z-index: 1;	
+}
+
+.sectionUnder {
+	position: relative;
+	z-index: 0;
+	background-attachment: fixed;
+}
+
+.orientedDiv1, .orientedDiv2, .orientedDiv3, .orientedDiv4 {
+	position: relative;
+	z-index: 0;
+	height: 75px;
+	width: 102%;
+	background-color: #f5f5f5;	
+}
+
+.orientedDiv1 {
+	transform: rotate(-0.6deg) translateY(-45px) translateX(-1px);
+	box-shadow: -10px 20px 12px rgba(0,0,0,0.60);
+}
+
+.orientedDiv2 {
+	transform: rotate(-0.6deg) translateY(45px) translateX(-1px);
+	box-shadow: -10px -20px 12px rgba(0,0,0,0.60);
+}
+
+.orientedDiv3 {
+	transform: rotate(0.6deg) translateY(-45px) translateX(-1px);
+	box-shadow: -10px 20px 12px rgba(0,0,0,0.60);
+}
+
+.orientedDiv4 {
+	transform: rotate(0.6deg) translateY(45px) translateX(-1px);
+	box-shadow: -10px -20px 12px rgba(0,0,0,0.60);
+}
+
+#bonjour {
+	font-size: 50px;
+	color: #05a300;
+	margin-bottom: 10px;
+}
+
+#jeSuis {
+	font-size:20px;
+	margin-bottom: 10px;
+}
+
+#formation, #realisations {
+	background-image: url("./PourCV.png");
+	color: white;
+}
+
+#contact {
+	z-index: 2;
+	position: relative;
+	background-color: #2e2e2e;
+	color: white;
+}
+
+.contactLine {
+	text-align: center;
+	padding: 0 5px 0 5px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .formationAnimation { animation: formationAnimation 3s 1; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .realisationAnimation { animation: realisationAnimation 3s 1; }
+}
+
+@keyframes formationAnimation {
+	from { opacity: 0%; }
+	to { opacity: 100%; }
+}
+
+@keyframes realisationAnimation {
+	from { opacity: 0%; }
+	to { opacity: 100%; }
+}
+
+.formationYears { font-size: 17px; }
+
+.formationTitle {
+	font-weight:  bold;
+	font-size: 24px;
+}
+
+.formationLabel { font-weight: bold; }
+
+.formationText { margin: 10px 0 10px 0; }
+
+.formationPlace { font-style: italic; }
+
+.compSection { margin: 25px auto 50px auto; }
+
+.compSectionTitle {
+	margin: 0 0 20px 15px;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+}
+
+.competence { margin: 20px 0 10px 0; }
+
+.compLogo {
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+}
+
+.compName {
+	font-weight: bold;
+	width: 125px;
+	color: black;
+}
+
+.compName:hover, .compName:active {
+	color: #02cc0c;
+	text-decoration: none;
+}
+
+.compLevel {
+	width: 300px;
+	background-color: lightgrey;
+	box-shadow: 2px 2px 5px black;
+}
+
+.compLevelLittle {
+	width: 200px;
+	background-color: lightgrey;
+	box-shadow: 2px 2px 5px black;
+}
+
+.compExp { background-color: #02cc0c; }
+
+@keyframes comp-Exp-Grow {
+	from { width: 0%; }
+	to { width: max; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .compAnimation { animation: comp-Exp-Grow 1.5s 1; }
+}
+
+.realisation {
+	text-align: center;
+	padding: 40px 0 40px 0;
+}
+
+.realisationTitle {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.realisationLabel {
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.loisirLabel { margin-top: 10px; }
+
+.loisirIcon:hover { animation: loisirJump 0.75s infinite; }
+
+@-webkit-keyframes loisirJump {
+	0%      {-webkit-transform:translateX(0px) translateY(0px)}
+	50%     {-webkit-transform:translateX(0px) translateY(-20px)}
+	100%    {-webkit-transform:translateX(0px) translateY(0px)}
+}
+
+#links{ background-color: #13c20a; }
+
+.link {
+	font-weight: bold;
+	color:  white;
+}
+
+.link:hover, .link:active {
+	color: black;
+	text-decoration: none;
+}
+
+.linkLogo {
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+}
+
+.contactRow { padding: 15px; }
+
+#footer {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #212121;
+	color: white;
+	font-size: 14px;
+}
